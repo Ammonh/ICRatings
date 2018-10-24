@@ -23,7 +23,7 @@ module.exports = async function (context, req) {
        else {
             context.res = {
                 status: 400,
-                body: "Invalid Rating! Give rating in between 1-5"
+                body: "Invalid Rating! Give rating in between 1 and 5"
             };
        }
     }
