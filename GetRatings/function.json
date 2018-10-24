@@ -1,0 +1,26 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "cosmosDB",
+      "name": "ICRatingDocument",
+      "databaseName": "icratingsdb",
+      "collectionName": "ICRatingCollection",
+      "connectionStringSetting": "icratingsdb_DOCUMENTDB",
+      "direction": "in"
+    }
+  ]
+}
